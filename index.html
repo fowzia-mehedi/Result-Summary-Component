@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Results summary component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: "Hanken Grotesk", sans-serif;
+      font-optical-sizing: auto;
+      font-size:1.125rem;
+    } 
+    .container {
+      width: 43.75rem;
+      display: flex;
+      border-radius: 5%;
+      box-shadow: 0px 0px 1.25rem -0.9375rem;
+    }
+
+    .blue-box {
+
+      width: 16.875rem;
+      border-radius: 5%;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2.5rem;
+      color:hsl(0, 0%, 100%) ;
+      background-image: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+
+    }
+    .white-box {
+      display: flex;
+      flex-direction: column;
+      padding: 1.8rem;
+      
+
+    }
+    .summary {
+      display: flex;
+      flex-direction: column;
+      gap: 0.625rem;
+    }
+    .summary>div {
+      width: 100%; 
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-basis: 3.125rem;
+      border-radius: 7px;
+    }
+    .red { 
+      background-color: hsl(0, 100%, 67%,0.1);
+      color: hsl(0, 100%, 67%);
+      font-weight:600;
+      
+    }
+    .yellow {
+      background-color:hsl(39, 100%, 56%,0.1) ;
+      color: hsl(39, 100%, 56%);
+      font-weight:600;
+    }
+    .green {
+      background-color:hsl(166, 100%, 37%,0.1) ;
+      color:hsl(166, 100%, 37%) ;
+      font-weight:600;
+
+    }
+    .blue {
+      background-color:hsl(234, 85%, 45%,0.1) ;
+      color:hsl(234, 85%, 45%) ;
+      font-weight:600;
+    }
+    
+    h1 {
+      font-size:1.375rem;
+      font-weight: 700;
+      margin-bottom:2.1875rem;
+    }
+    .heading {
+      margin-top: 1.375rem;
+    }
+    h2 {
+      font-size:xx-large;
+    }
+    .circle {
+      width: 48%;
+      border-radius: 50%;
+      padding: 1.25rem;
+      background-image: linear-gradient(hsla(256, 72%, 46%, 1) ,hsla(241, 72%, 46%, 0));
+      
+      
+    }
+    span {
+      font-size: 4.375rem;
+      font-weight: 600;
+    }
+    button {
+     width: 100%;
+     height:3.125rem;
+     background-color:hsl(224, 30%, 27%) ;
+     border-radius: 30px;
+     color: white;
+     font-size: 1.125rem;
+     margin-top: 1.5625rem;
+     cursor: pointer;
+    }
+    button:hover {
+      border: 0;
+      background-image: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+    }
+   .score {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: black;
+   }
+   .full-score {
+    font-size:1.125rem ;
+    color:hsl(224, 30%, 27%,0.5) ;
+    font-weight:700;
+   }
+   .emoji {
+    font-size:larger;
+    margin-right: 0.3125rem;
+    
+   }
+   @media(max-width:425px) {
+    .container {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+   }
+   .blue-box {
+    width: 80%;
+    margin-top: 4.375rem;
+   }
+  }
+   
+  </style>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <div class="blue-box">
+
+     <h1>Your Result</h1>
+
+     <div class="circle"> 
+       <span>76</span>
+       <br>
+       of 100
+     </div>
+
+     <h2>Great</h2>
+     You scored higher than 65% of
+     <br> 
+     the people who have taken
+     <br>
+     these tests.
+
+    </div>
+
+      
+
+     <div class="white-box">
+       <h1 class="heading">Summary</h1>
+        <div class="summary">
+         <div class="red">
+          <div><span class="emoji">⚡</span>Reaction</div>
+           <div><span class="score">80</span> <span class="full-score">/ 100</span></div>
+         </div>
+       
+         <div class="yellow">
+           <div><span class="emoji">🧠</span>Memory</div>
+           <div><span class="score">92</span><span class="full-score"> / 100</span></div>
+         </div>
+      
+         <div class="green">
+           <div><span class="emoji">💬</span>Verbal</div>
+           <div><span class="score">61</span><span class="full-score"> / 100</span></div>
+         </div>
+      
+         <div class="blue">
+           <div><span class="emoji">👀</span>Visual</div>
+           <div><span class="score">72 </span><span class="full-score">/ 100</span></div>
+         </div>
+        
+         <div><button>Continue</button></div>
+      
+          <div class="attribution">
+
+           Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+           Coded by <a href="#"> Fowzia Mehedi</a>.
+
+          </div>
+        </div>
+       </div>
+  </div>
+
+</body>
+</html>
