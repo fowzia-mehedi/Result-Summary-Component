@@ -25,7 +25,7 @@
       font-size:1.125rem;
     } 
     .container {
-      width: 43.75rem;
+      max-width: 43.75rem;
       display: flex;
       border-radius: 5%;
       box-shadow: 0px 0px 1.25rem -0.9375rem;
@@ -33,7 +33,7 @@
 
     .blue-box {
 
-      width: 16.875rem;
+      max-width: 16.875rem;
       border-radius: 5%;
       text-align: center;
       display: flex;
@@ -135,8 +135,8 @@
     font-weight:700;
    }
    .emoji {
-    font-size:larger;
-    margin-right: 0.3125rem;
+    font-size:x-large;
+    margin-right: 0.9375rem;
     
    }
    @media(max-width:425px) {
@@ -146,8 +146,8 @@
       flex-direction: column;
    }
    .blue-box {
-    width: 80%;
-    margin-top: 4.375rem;
+    max-width:26.5625rem;
+    margin-top: 5.625rem;
    }
   }
    
@@ -184,22 +184,22 @@
        <h1 class="heading">Summary</h1>
         <div class="summary">
          <div class="red">
-          <div><span class="emoji">⚡</span>Reaction</div>
+          <div><span class="emoji"><img src="./assets/images/icon-reaction.svg" alt="lightning"></span>Reaction</div>
            <div><span class="score">80</span> <span class="full-score">/ 100</span></div>
          </div>
        
          <div class="yellow">
-           <div><span class="emoji">🧠</span>Memory</div>
+           <div><span class="emoji"><img src="./assets/images/icon-memory.svg" alt="brain"></span>Memory</div>
            <div><span class="score">92</span><span class="full-score"> / 100</span></div>
          </div>
       
          <div class="green">
-           <div><span class="emoji">💬</span>Verbal</div>
+           <div><span class="emoji"><img src="./assets/images/icon-verbal.svg" alt="chat bubble"></span>Verbal</div>
            <div><span class="score">61</span><span class="full-score"> / 100</span></div>
          </div>
       
          <div class="blue">
-           <div><span class="emoji">👀</span>Visual</div>
+           <div><span class="emoji"><img src="./assets/images/icon-visual.svg" alt="eye"></span>Visual</div>
            <div><span class="score">72 </span><span class="full-score">/ 100</span></div>
          </div>
         
